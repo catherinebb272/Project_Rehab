@@ -23,25 +23,25 @@ Like misplacing your house keys, agents often "forget" because:
 - structure is unclear  
 By enforcing consistent placement and habits, recall improves naturally.
 ---
-System Architecture
+## System Architecture
 Project Rehab is composed of modular instruction files and creates others.
 Instructions Included
-controller.md
-prep.md
-teach_behavior.md
-api_consolidation.md
-tools_rebuild.md
-updating_tools.md
-stop_routine.md
+- controller.md
+- prep.md
+- teach_behavior.md
+- api_consolidation.md
+- tools_rebuild.md
+- updating_tools.md
+- stop_routine.md
 Support Files Created or Used
-state.md – tracker for interruptions
-idempotency_rules.md – duplicate handling
-markdowns.md – inserts for tools.md, agents.md, and soul.md
-flag.md – logs conflicts, duplicates, unclear cases
-summarylog.md – chronological log of all actions taken
-soul.md – behavioral definitions (modified by teach_behavior.md)
-agents.md – agent-level references (modified by teach_behavior.md)
-tools.md – tool index and handling rules (modified by multiple modules)
+- state.md – tracker for interruptions
+- idempotency_rules.md – duplicate handling
+- markdowns.md – inserts for tools.md, agents.md, and soul.md
+- flag.md – logs conflicts, duplicates, unclear cases
+- summarylog.md – chronological log of all actions taken
+- soul.md – behavioral definitions (modified by teach_behavior.md)
+- agents.md – agent-level references (modified by teach_behavior.md)
+- tools.md – tool index and handling rules (modified by multiple modules)
 
 Execution Flow
 START (At startup, controller.md loads idempotency_rules.md and applies all global safety rules.)
