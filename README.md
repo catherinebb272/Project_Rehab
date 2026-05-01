@@ -43,7 +43,8 @@ Support Files Created or Used
 - agents.md – agent-level references (modified by teach_behavior.md)
 - tools.md – tool index and handling rules (modified by multiple modules)
 
-Execution Flow
+## Execution Flow
+
 START (At startup, controller.md loads idempotency_rules.md and applies all global safety rules.)
 ↓  
 Check state.md
