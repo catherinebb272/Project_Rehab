@@ -12,9 +12,9 @@ Rather than treating memory issues as cognitive failures, this system treats the
 The anticipated user is someone who has a new agent that has not been organized or developed any consistent behaviors regarding files and tools.  They must be willing to accept the recommended naming conventions for tools and keys, and to use their agent to follow up on the flagged items (conflicts, duplicates, etc).
 
 ## Install from Github repo  
-Copy all .md files
-Follow preflight instructions in Readme
-Tell agent to launch using controller.md
+- Copy all .md files
+- Follow preflight instructions in Readme
+- Tell agent to launch using controller.md
 
 ## Core Concept
 Like misplacing your house keys, agents often "forget" because:
