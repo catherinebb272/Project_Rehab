@@ -2,16 +2,21 @@
 
 - Ensure /skills exists
 # TOOL NAMING RULES
-Each entry in .env represents one tool.  Use folder-safe tool names:
-1. Convert to lowercase
-2. Replace hyphens with underscores
-3. Remove characters not in [a-z0-9_]
-4. Folder name = skills/<cleaned_name>/
-Examples:
-DISCORD-SETUP → skills/discord/
-PAYPAL-1.1 → skills/paypal/
-- For each entry in .env:
-  - create skills/tool_name/
+Map each .env variable to its corresponding tool/service name:
+
+| .env Variable | → Skill Folder |
+|---------------|----------------|
+| *_API_KEY | skills/<service_name>/ |
+| *_TOKEN | skills/<service_name>/ |
+
+Generic examples:
+- ELEVENLABS_API_KEY → skills/elevenlabs/
+- GITHUB_TOKEN → skills/github/
+- DISCORD_BOT_TOKEN → skills/discord/
+
+For each unique SERVICE (not each .env variable):
+  - Create skills/<service_name>/
+  - Use the mapped tool name, not the raw variable name
 Inside each tool folder:
 - skill_tool_name.md → purpose + usage
 - docs/ → extended documentation (if available)
