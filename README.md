@@ -6,13 +6,13 @@ README
 Project Rehab is a modular system designed to reduce apparent "agent forgetfulness" by enforcing disciplined organization of tools, skills, and files.
 Rather than treating memory issues as cognitive failures, this system treats them as **organizational failures** and corrects them through:
 1. Behavior modification  (modify startup instructions to create stricter rules for storage of tools and skills)
-2. Structural repair  (consolidate existing tokens & keys in one .env file, move skills into files)
+2. Structural repair  (consolidate existing tokens & keys in one .env file, move tools and skills into files)
 3. Future maintenance
 ## Intended Users
-The anticipated user is someone who has a new agent that has not been organized or developed any consistent behaviors regarding files and tools.  They must be willing to accept the recommended naming conventions for tools and keys, and to use their agent to follow up on the flagged items (conflicts, duplicates, etc).
+The anticipated user is someone who has a new agent that has not been organized or developed any consistent behaviors regarding files and tools.  They must be willing to accept the recommended naming conventions for tools and keys, and to use their agent to follow up on the flagged items (conflicts, duplicates, etc).  Aimed at heyron.ai community, but not limited to that.
 
 ## Install from Github repo  
-- Copy all .md files
+- Copy all .md files into Project_rehab folder in root
 - Follow preflight instructions in Readme
 - Tell agent to launch using controller.md
 
@@ -93,7 +93,7 @@ You are responsible for ensuring a complete backup of:
 Project Rehab does **not** delete files automatically, but it does reorganize and copy sensitive data.
 ---
 ### 2. Start a Fresh Session (Recommended)
-For best results, start with a clean agent session  
+For best results, start with a clean agent session using an organized model like minimax (never Gemini=flash lite)
 Ensure soul.md, agents.md, and tools.md exist before installing Project Rehab.
 ## Installation
 1.	Create a folder in root directory (ex project_rehab):
